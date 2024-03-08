@@ -1,0 +1,11 @@
+/* Page Title */
+.pageTitle {
+    margin-bottom: 5px;
+}
+
+.pageTitle h1 {
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #4d4d4d;
+}

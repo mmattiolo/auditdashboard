@@ -1,0 +1,25 @@
+/*----------------------------------
+#Logo
+-----------------------------------*/
+
+
+.logo{
+    line-height: 1;
+}
+
+@media (min-width: 1200px){
+    .logo{width: 180px;
+    }
+}
+
+.logo img {
+    max-height: 60px;
+    margin-right: 6px;
+}
+
+.logo span{
+    font-size: 18px;
+    font-weight: 700;
+    color: whitesmoke;
+    font-family: Circular, Arial, sans-serif;
+}

@@ -1,0 +1,43 @@
+/*----------------------------------
+#Header
+-----------------------------------*/
+
+/* Estilo base do header (já fornecido) */
+.header {
+    transition: all 0.5s;
+    z-index: 997;
+    height: 60px;
+    box-shadow: 0px 2px 5px rgba(1, 41 , 112, 0.1);
+    background: linear-gradient(45deg,#415af1,#10f2ccb1,#7d10f2b1);
+    /* background-color: #415af1; */
+    padding-left: 20px;
+}
+
+/* Estilo ajustado para a sidebar */
+.sidebar {
+    position: fixed; /* Fixa a sidebar na viewport */
+    top: 50px; /* Inicia logo abaixo do header */
+    left: 0;
+    width: 260px; /* Largura fixa; ajuste conforme necessário */
+    height: calc(100% - 70px); /* Altura ajustada para não sobrepor o header */
+    background: #f8f9fa;
+    transition: all 0.5s; /* Transição suave para animações ou ajustes de largura */
+    z-index: 996; /* Menor que o header para não sobrepor */
+    overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
+}
+
+/* Estilos para o botão de alternar a sidebar, se necessário */
+.header .toggle-sidebar-btn {
+    font-size: 28px;
+    margin-left: 40px;
+    color: whitesmoke;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+/* Correção para garantir que o conteúdo principal não seja sobreposto pela sidebar */
+.main-content {
+    margin-left: 250px; /* Deve ser igual à largura da sidebar */
+    transition: margin-left 0.5s; /* Transição suave para quando a sidebar é ocultada/exibida */
+}
+

@@ -1,0 +1,85 @@
+/*----------------------------------
+#Header nav
+-----------------------------------*/
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav .nav-icon {
+    font-size: 22px;
+    color: whitesmoke;
+    margin-right: 25px;
+    position: relative;
+}
+
+.header-nav .nav-item .badge-number {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 3px 6px;
+}
+
+.dropdown-menu .notification-item, .header-nav .messages .message-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    transition: 0.3s;
+}
+
+.dropdown-menu .notification-item i, .header-nav .messages .message-item img {
+    margin-right: 20px; 
+    font-size: 20px; /* Ajuste apenas para ícones */
+    width: 40px; /* Ajuste apenas para imagens */
+    height: 40px; /* Ajuste apenas para imagens */
+    object-fit: cover; /* Ajuste apenas para imagens */
+}
+
+.dropdown-menu .notification-item h4, .header-nav .messages .message-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444444;
+}
+
+.dropdown-menu .notification-item p, .header-nav .messages .message-item p {
+    font-size: 14px; /* Padronizado para ambos */
+    color: #919191;
+    margin: 0; /* Removida a inconsistência de margin-bottom para os parágrafos */
+}
+
+.dropdown-menu .notification-item:hover, .header-nav .messages .message-item:hover {
+    background-color: #f6f9ff;
+}
+
+.header-nav .messages .message-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    width: 100%; 
+}
+
+.user-avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  .dropdown-menu .dropdown-header img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .dropdown-menu .dropdown-header {
+    text-align: center;
+  }
+  
+  .dropdown-menu .dropdown-item i {
+    margin-right: 8px;
+  }
+  

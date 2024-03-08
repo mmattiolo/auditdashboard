@@ -1,0 +1,183 @@
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    font-size: 13px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 5px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 6px rgba(72,54,152 , 0.3);
+    background-color:  #f5f5f5;
+}
+
+@media (max-width: 1199px) {
+    .sidebar {
+        left: -300px;
+    }
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #f5f5f5;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+}
+
+@media (min-width: 1200px) {
+    #main,
+    #footer {
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+        left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer {
+        margin-left: 0;
+    }
+    /* Esta parte parece não ser utilizada diretamente pelo JSX, mas pode ser uma funcionalidade dinâmica. Mantenha comentado se não estiver em uso. */
+     .toggle-sidebar .sidebar {
+     left: -300px;
+    }
+}
+
+/*Project management*/
+.nav-item-content {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 35px;
+    font-weight: 400;
+
+  }
+  
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    padding: 0;
+    margin-left: -2px;
+    text-decoration: none;
+    margin-bottom: 2.0%;
+    list-style: none;
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 5px;
+}
+
+.sidebar-nav .nav-heading {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: 600;
+    margin: 10px 0 5px 15px;
+}
+
+/*Formatacao areas*/
+.sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6F2786;
+    transition: 0.4s;
+    background: #f6f9ff;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+/*Formatacao icone areas*/
+.sidebar-nav .nav-link i {
+    background-color: white; /* Define o fundo como branco */
+    width: 40px; /* Largura do container do ícone */
+    height: 40px; /* Altura do container do ícone */
+    font-size: 22px;
+    font-weight: 600;
+    color: #454B76;
+    cursor: pointer;
+    /* background-image: linear-gradient(to right, #25a9e16f, #4481eb65, #04c0fe69, #3f85ed62); */
+    text-align:center;
+    border: none;
+    background-size: 350% 200%;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+    
+    border-radius: 6px;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    margin-right: 15px;
+}
+  
+.sidebar-nav .nav-link.collapsed {
+    color: #454B76;
+    background: #f6f9ff;
+}
+
+.sidebar-nav .nav-link.collapsed i {
+    color: #454B76;
+}
+
+.sidebar-nav .nav-link:hover {
+    color: #6F2786;
+    background: #f6f9ff;
+}
+
+.sidebar-nav .nav-link .bi-chevron-down {
+    margin-right: 0;
+    background-image:none;
+    box-shadow:none;
+    color: #454B76;
+    transition: transform 0.4s ease-in-out;
+}
+
+ .bi-chevron-down {
+    margin-right: 0;
+    background-color: white; /* Fundo branco */
+    color: #454B76; /* Letra cinza */
+    box-shadow:none;
+    transition: transform 0.4s ease-in-out;
+}
+
+.sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
+    transform: rotate(180deg);
+    background-color: white; /* Fundo branco */
+    color: #454B76; /* Letra cinza */
+}
+
+.sidebar-nav .nav-content {
+    padding: 5px 0 0 0;
+    margin-bottom: 1%;
+
+}
+
+.nav-sub-content li {
+    margin-left: -15px; /* Ajuste este valor conforme necessário */
+
+  }
+
+.nav-sub-content li span {
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 1px;
+    color: #454B76;
+    font-size: 13px; /* Ajuste este valor conforme necessário */
+  }
+  
