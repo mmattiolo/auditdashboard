@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Chart from 'react-apexcharts';
 import "./card.css"
 
 function ReportCharts() {
-  const [data, setData] = useState({
+  const [data] = useState({
     series: [
       {
         name: 'Sales',
@@ -67,7 +67,7 @@ function ReportCharts() {
   });
 
   return (
-    <div className="chart-container">
+      <div className="chart-container" >
       <Chart
         options={data.options}
         series={data.series}

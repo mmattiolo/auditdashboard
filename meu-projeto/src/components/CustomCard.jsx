@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import "./card.css"
+import PropTypes from 'prop-types';
 import CardFilter from './CardFilter';
 
 function CustomCard({ card }) {
@@ -14,7 +15,7 @@ function CustomCard({ card }) {
         <CardFilter filterChange ={handleFilterChange} />
         <div className="card-body">
           <h5 className="card-title">
-            {card.name} <span>{filter}</span>
+            {card.name} <span>|{filter}</span>
           </h5>
 
           <div className="d-flex align-items-center">
@@ -46,6 +47,16 @@ function CustomCard({ card }) {
       </div>
     </div>
   );
+  
 }
+
+CustomCard.propTypes = {
+  card: PropTypes.shape({
+      amount: PropTypes.number,
+      percentage: PropTypes.number,
+      icon: PropTypes.string,
+      name: PropTypes.string
+  }).isRequired
+};
 
 export default CustomCard

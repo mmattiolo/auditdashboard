@@ -1,0 +1,245 @@
+:root {
+  --primary-color: #0079bf;
+  --hover-color: #f0f8ff; /* Cor mais clara para hover que garante acessibilidade */
+  --btn-bg-color: #5aac44;
+  --btn-hover-bg-color: #519839;
+}
+  
+.kanban {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    overflow-x: auto; /* Permite rolagem horizontal se as colunas excederem a largura da tela */
+  }
+  
+
+  .kanban-column {
+    min-width: 250px; /* Define uma largura mínima para cada coluna */
+    max-height: 80vh; /* Limita a altura das colunas e permite rolagem interna */
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+  
+  .kanban-column-header {
+    padding: 10px 15px;
+    color: #454B76;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .kanban-column-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .kanban-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: grab;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .kanban-item:hover {
+    background-color: var(--hover-color); /* Mais perceptível e consistente */
+  }
+  
+  .kanban-item-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+  
+  .kanban-item-badge {
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .kanban-item-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .kanban-item-deadline,
+  .kanban-item-responsible {
+    background: #e9ecef;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .kanban {
+      flex-direction: column;
+    }
+  
+    .kanban-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .add-item-btn {
+    width: 20px;
+    height: 20px;
+    margin: 5px auto;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 6px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #6f706f3e;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add-item-btn:hover {
+    background-color: var(--btn-hover-bg-color); /* Cor mais consistente com o design */
+    color: #ffffff;
+  }
+  
+  .kanban-item:active, .add-item-btn:active {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra mais perceptível */
+    transform: scale(0.98); /* Uma leve compressão para indicar ação */
+  }
+
+  .add-item-btn:focus {
+    outline: 2px solid var(--primary-color); /* Outline clara para melhorar o foco */
+    background-color: var(--btn-hover-bg-color); /* Mudança de cor para indicar foco */
+  }
+
+  /* Adiciona estilos específicos para cada coluna baseado em seu nome */
+
+  .kanban-column {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Sombra sutil e consistente */
+  }
+  .kanban-column.planned {
+    background-color: #fdebcf47;
+  }
+  
+  .kanban-column.ongoing {
+    background-color: #f3d3fe3f;
+   }
+  
+  .kanban-column.prepared {
+    background-color: #e3d3fc47;
+   }
+  
+  .kanban-column.review {
+    background-color: #cae4f54a;
+   }
+  
+  .kanban-column.completed {
+    background-color: #c9f5f349;
+   }
+ 
+/* Estilos adicionais para alinhar o cartão com o cabeçalho */
+.kanban-column-header {
+  margin-bottom: 10px; /* Adiciona espaço entre o cabeçalho e o primeiro cartão */
+}
+
+.kanban-item-badge {
+  background-color: var(--primary-color); /* Melhora a legibilidade */
+  color: #ffffff; /* Contraste aprimorado */
+}
+.financial-auditing {
+    background-color: #033C8C;
+    color: #ffffff
+  }
+  
+  .audit-planning {
+    background-color: #600e7b;
+    color: #ffffff
+  }
+   
+  .audit-testing {
+    background-color: #e6b41f;
+  }
+  
+  .compliance-audit {
+    background-color: #0e4d92;
+  }
+  
+  .risk-management-in-auditing {
+    background-color: #7b1e83;
+  }
+  
+  .substantive-procedures {
+    background-color: #e6c12f;
+  }
+  
+  .audit-documentation {
+    background-color: #165aa7;
+  }
+  
+  .financial-analysis {
+    background-color: #8c2385;
+  }
+  
+  .asset-valuation {
+    background-color: #e6cc3f;
+  }
+  
+  .revenue-audit {
+    background-color: #1a65bc;
+  }
+  
+  .fraud-auditing {
+    background-color: #9c2790;
+  }
+  
+  
+  .tax-audit {
+    background-color: #206ed1;
+  }
+  
+  .inventory-audit {
+    background-color: #ad2b9b;
+  }
+  
+  
+  .evidence-review {
+    background-color: #2477e6;
+  }
+  
+  .financial-reporting {
+    background-color: #bd30a6;
+  }
+  
+  
+  .audit-of-transactions {
+    background-color: #d69e2e; /* Ajustando para uma cor mais escura para melhorar o contraste */
+    color: #ffffff; /* Mantendo o texto branco para alto contraste */
+  }
+  
+  .audit-reporting {
+    background-color: #2a9d8f; /* Mudando para uma cor que oferece um bom contraste com o texto branco */
+    color: #ffffff; /* Texto branco para legibilidade */
+  }
+  
+  .cash-audit {
+    background-color: #264653; /* Optando por uma cor bem mais escura para excelente legibilidade */
+    color: #ffffff; /* Texto branco */
+  }
+  .loan-audit {
+    background-color: #2881f9;
+  }
+  
+  .benefit-plan-audit {
+    background-color: #cc36b1;
+  }
+
+ 

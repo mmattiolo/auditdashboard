@@ -1,4 +1,3 @@
-import React from 'react';
 import profileImg from '../images/avatarImg.jpg';
 
 function NavAvatar() {

@@ -8,8 +8,8 @@
     z-index: 997;
     height: 60px;
     box-shadow: 0px 2px 5px rgba(1, 41 , 112, 0.1);
-    background: linear-gradient(45deg,#415af1,#10f2ccb1,#7d10f2b1);
-    /* background-color: #415af1; */
+    /* background: linear-gradient(45deg,#415af1,#10f2ccb1,#7d10f2b1); */
+    background-color: #033C8C;
     padding-left: 20px;
 }
 

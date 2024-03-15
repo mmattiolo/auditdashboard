@@ -1,0 +1,164 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "content": "Assess internal control systems",
+      "area": "Financial Auditing",
+      "deadline": "24/11/2023",
+      "responsible": "Alex",
+      "status": "Planned"
+    },
+    {
+      "id": 6,
+      "content": "Evaluate financial statement assertions",
+      "area": "Audit Planning",
+      "deadline": "01/12/2023",
+      "responsible": "Sam",
+      "status": "Planned"
+    },
+    {
+      "id": 7,
+      "content": "Test monetary misstatements",
+      "area": "Audit Testing",
+      "deadline": "10/12/2023",
+      "responsible": "Riley",
+      "status": "Planned"
+    },
+    {
+      "id": 8,
+      "content": "Review compliance with GAAP",
+      "area": "Compliance Audit",
+      "deadline": "30/11/2023",
+      "responsible": "Jordan",
+      "status": "Planned"
+    },
+    {
+      "id": 2,
+      "content": "Analyze risk assessment procedures",
+      "area": "Risk Management in Auditing",
+      "deadline": "15/12/2023",
+      "responsible": "Jordan",
+      "status": "Ongoing"
+    },
+    {
+      "id": 9,
+      "content": "Perform substantive audit procedures",
+      "area": "Substantive Procedures",
+      "deadline": "20/12/2023",
+      "responsible": "Alex",
+      "status": "Ongoing"
+    },
+    {
+      "id": 10,
+      "content": "Prepare audit documentation",
+      "area": "Audit Documentation",
+      "deadline": "05/12/2023",
+      "responsible": "Sam",
+      "status": "Ongoing"
+    },
+    {
+      "id": 11,
+      "content": "Assess going concern assumption",
+      "area": "Financial Analysis",
+      "deadline": "25/12/2023",
+      "responsible": "Riley",
+      "status": "Ongoing"
+    },
+    {
+      "id": 3,
+      "content": "Evaluate asset impairments",
+      "area": "Asset Valuation",
+      "deadline": "30/10/2023",
+      "responsible": "Chris",
+      "status": "Prepared"
+    },
+    {
+      "id": 12,
+      "content": "Audit revenue recognition practices",
+      "area": "Revenue Audit",
+      "deadline": "10/01/2024",
+      "responsible": "Jordan",
+      "status": "Prepared"
+    },
+    {
+      "id": 13,
+      "content": "Investigate fraud indicators",
+      "area": "Fraud Auditing",
+      "deadline": "15/01/2024",
+      "responsible": "Sam",
+      "status": "Prepared"
+    },
+    {
+      "id": 14,
+      "content": "Review related party transactions",
+      "area": "Audit of Transactions",
+      "deadline": "20/01/2024",
+      "responsible": "Alex",
+      "status": "Prepared"
+    },
+    {
+      "id": 4,
+      "content": "Assess compliance with tax laws",
+      "area": "Tax Audit",
+      "deadline": "30/10/2023",
+      "responsible": "Chris",
+      "status": "Review"
+    },
+    {
+      "id": 15,
+      "content": "Examine inventory valuation methods",
+      "area": "Inventory Audit",
+      "deadline": "18/12/2023",
+      "responsible": "Riley",
+      "status": "Review"
+    },
+    {
+      "id": 16,
+      "content": "Conduct audit closing meetings",
+      "area": "Audit Reporting",
+      "deadline": "22/12/2023",
+      "responsible": "Jordan",
+      "status": "Review"
+    },
+    {
+      "id": 17,
+      "content": "Review audit evidence collection",
+      "area": "Evidence Review",
+      "deadline": "29/12/2023",
+      "responsible": "Sam",
+      "status": "Review"
+    },
+    {
+      "id": 5,
+      "content": "Analyze depreciation and amortization methods",
+      "area": "Financial Reporting",
+      "deadline": "22/10/2023",
+      "responsible": "Mark",
+      "status": "Completed"
+    },
+    {
+      "id": 18,
+      "content": "Verify cash and cash equivalents",
+      "area": "Cash Audit",
+      "deadline": "02/12/2023",
+      "responsible": "Alex",
+      "status": "Completed"
+    },
+    {
+      "id": 19,
+      "content": "Examine loan and interest calculations",
+      "area": "Loan Audit",
+      "deadline": "29/11/2023",
+      "responsible": "Riley",
+      "status": "Completed"
+    },
+    {
+      "id": 20,
+      "content": "Audit employee benefit plans",
+      "area": "Benefit Plan Audit",
+      "deadline": "10/12/2023",
+      "responsible": "Sam",
+      "status": "Completed"
+    }
+  ]
+}

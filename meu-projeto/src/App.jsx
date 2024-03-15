@@ -8,13 +8,16 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import Header from './components/Header';
 import SideBar from './components/SideBar';
 import Main from './components/Main';
+import { ActiveComponentProvider } from './components/Kanban/ActiveComponentContext';
 
 
 function App() {
 return (<>
     <Header/>
-    <SideBar/>
-    <Main/>
+    <ActiveComponentProvider>
+      <SideBar/>
+      <Main/>
+    </ActiveComponentProvider>
     </>);
   }
 

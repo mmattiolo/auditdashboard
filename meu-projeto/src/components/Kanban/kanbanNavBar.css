@@ -1,0 +1,51 @@
+/* navbar.css */
+.navbar {
+    background: linear-gradient(90deg, #F5F5F5, #eeededf9);
+    border: none;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #454B76; /* Cor padrão dos itens */
+    font-weight: 600;
+    font-size: 14px;
+   }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #6F2786; /* Cor ao passar o mouse */
+    font-weight: 600;
+    font-size: 14px;
+    background-color: transparent; /* Mantém o fundo transparente ao passar o mouse */
+  }
+  
+  /* Estiliza os botões dentro da navbar para manter a consistência */
+  .navbar .btn {
+    color: #454B76; /* Mantém a cor padrão dos botões para consistência */
+    background-color: #F5F5F5; /* Introduz um fundo sutil para os botões, tornando-os levemente destacados */
+    border-radius: 5px; /* Adiciona bordas arredondadas para uma aparência mais moderna */
+    padding: 5px 10px; /* Ajusta o padding para melhorar a legibilidade e acessibilidade */
+    transition: all 0.3s ease; /* Suaviza a transição de cores e fundo */
+    border: 1px solid #eeeded; /* Introduz uma borda sutil para definir melhor os limites do botão */
+  }
+  
+  .navbar .btn:hover {
+    color: #FFFFFF; /* Muda a cor do texto ao passar o mouse para melhor contraste */
+    background-color: #6F2786; /* Usa a cor de hover dos links para manter a harmonia visual */
+    border-color: #6F2786; /* Ajusta a cor da borda para combinar com o fundo ao passar o mouse */
+  }
+  
+  /* Ajusta o foco para melhorar a acessibilidade, importante para usuários de leitores de tela e navegação por teclado */
+  .navbar .btn:focus {
+    outline: none; /* Remove o outline padrão */
+    box-shadow: 0 0 0 2px rgba(111, 39, 134, 0.5); /* Adiciona um glow externo para indicar foco, usando a cor de hover */
+  }
+  /* Se você estiver usando dropdowns e quiser estilizá-los também */
+  .navbar-nav .nav-item.dropdown .dropdown-menu {
+    border: none; /* Remove a borda padrão do dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para destacar */
+  }
+  
+  .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: #454B76; /* Cor padrão dos itens do dropdown */
+  }
+  

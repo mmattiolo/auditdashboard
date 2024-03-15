@@ -1,0 +1,83 @@
+
+/* Base styling for top-selling section */
+.top-selling {
+  color: #454B76;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  overflow: hidden; /* Ensures the border-radius applies */
+}
+
+.top-selling .card-title, .datatable th {
+  margin-top: 20px;
+  color: #454B76; /* A distinct color to match with card-title */
+  font-weight: 600; /* Making header fonts slightly bolder */
+}
+
+/* Unified table styles */
+.table, .datatable {
+  margin-bottom: 0; /* Removes default bottom margin */
+  text-align: left; /* Default alignment */
+}
+
+.table th, .table td, .datatable th, .datatable td {
+  padding: 12px 15px; /* Adjusted padding for better spacing, overriding .datatable padding */
+  font-size: 14px; /* Ensuring consistency in font size */
+}
+
+/* Header styling for table */
+.table thead th, .table-light th {
+  color: #454B76; /* Ensures header font color matches the theme */
+  font-weight: 600;
+  background-color: #eaecef; /* A light background color for the header */
+}
+
+/* Hover effect for rows */
+.table tbody tr:hover, .datatable tbody tr:hover {
+  background-color: #86a4df !important; /* Ensures this background color has priority */
+  cursor: pointer;
+}
+
+/* Aligns text for specific columns to the right, including adjustments for datatable */
+.table td:nth-child(4), .table td:nth-child(5),
+.table th:nth-child(4), .table th:nth-child(5) {
+  text-align: center;
+}
+
+
+/* Badge styles */
+.badge {
+  display: grid; /* Usando flex para centralizar o conteúdo */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  min-width: 10px; /* Define um tamanho mínimo para a badge */
+  padding: 0.5em 0.75em;
+  font-size: 0.75em; /* Slightly smaller font size for badges */
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem; /* Rounded corners for badges */
+}
+
+.bg-warning {
+background-color: #e6b41f;
+color: black; /* Dark text for better contrast */
+}
+
+/* Classes de cor para a badge */
+.bgsuccess- {
+  background-color: #06827c !important;
+  /* Verde */
+}
+
+.bg-danger {
+  background-color: #600e7b !important;
+  /* Roxo */
+}
+
+
+/* Removing borders from table cells in table-borderless */
+.table-borderless th, .table-borderless td {
+border: 0; /* Corrected to actually remove borders */
+}

@@ -1,0 +1,114 @@
+.table-responsive {
+    margin: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table {
+    width: 96%;
+    margin-bottom: 20px; /* Remove default margin */
+  }
+  
+  /* Headers */
+  .table thead th {
+    background-color: #f4f5f7; /* Light grey similar to Jira's UI */
+    color: #5e6c84; /* Dark grey for contrast */
+    padding: 5px;
+    border-bottom: 2px solid #e1e4e8; /* Slightly darker line for separation */
+  }
+  
+  /* Rows */
+  .table tbody tr {
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #ebf1f5; /* Light blue for hover, enhancing interactivity */
+  }
+  
+  .table tbody td {
+    padding: 6px;
+    border-top: 1px solid #e1e4e8; /* Subtle separation between rows */
+    vertical-align: middle; /* Align items for improved readability */
+  }
+  
+  /* Customizing the button to fit the theme */
+  .btn-primary {
+    background-color: #0052ccac; /* Deep blue, providing good contrast on light backgrounds */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px; /* Rounded edges for a modern look */
+    transition: background-color 0.2s ease; /* Smooth background color transition on hover */
+  }
+  
+  .btn-primary:hover {
+    background-color: #003c9e; /* A shade darker for interactive feedback */
+  }
+  
+  /* Enhancements for mobile responsiveness */
+  @media (max-width: 768px) {
+    .table-responsive {
+      margin: 10px;
+    }
+    
+    .table tbody td {
+      padding: 10px 5px; /* Adjust padding for smaller screens */
+    }
+    
+    .table thead {
+      display: none; /* Simplifying view by removing thead on small screens */
+    }
+    
+    .table tbody td {
+      display: block;
+      text-align: right;
+      position: relative;
+      padding-left: 10%;
+      margin-bottom: 15px;
+    }
+    
+    .table tbody td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: 45%;
+      text-align: left;
+      font-weight: 600;
+      color: #5e6c84; /* Keeping the text color consistent with the desktop view */
+    }
+  }
+
+  /* Classes de cor para a badge */
+.badge  {
+    color: #fff !important; /* Garante legibilidade em todos os badges */
+    padding: 0.2em 0.75em; /* Espaçamento interno para o badge */
+    font-size: 90%; /* Tamanho de fonte apropriado para badges */
+    font-weight: 400; /* Negrito para destacar */
+    line-height: 1; /* Linha única para o texto do badge */
+    text-align: center; /* Centraliza o texto */
+    white-space: nowrap; /* Evita quebra de linha */
+    vertical-align: baseline; /* Alinha verticalmente */
+    border-radius: 0.375rem; /* Bordas arredondadas para estética moderna */
+    display: inline-block; /* Exibição em linha para posicionamento adequado */
+  }
+  
+  
+  .bg-dark {
+    background-color: #033C8C !important; /* Azul escuro */
+  }
+  
+  .bg-info {
+    background-color: #5AC8FA !important; /* Azul claro */
+  }
+  
+  .bg-success {
+    background-color: #06827c  !important; /* Azul claro */
+  }
+  .bg-warning {
+    background-color: #e6b41f  !important; /* Azul claro */
+  }
+  
+  

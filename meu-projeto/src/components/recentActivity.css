@@ -1,0 +1,100 @@
+.dashboard .activity {
+    font-size: 14px;
+}
+
+.dashboard .activity .activity-item .activity-label {
+    color: #454B76;
+    position: relative;
+    padding-bottom: 3%;
+    flex-shrink: 0;
+    /* Evita que o label encolha */
+    flex-grow: 0;
+    /* Evita que o label cresça */
+    flex-basis: auto;
+    /* Tamanho base do label conforme o conteúdo */
+    min-width: 64px;
+    /* Mínimo de largura para o label */
+    margin-right: 8px;
+    /* Adiciona um espaçamento entre o label e a badge */
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilização base para a badge */
+.activity-badge {
+    position: relative;
+    /* Necessário para posicionar corretamente o pseudo-elemento */
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: auto;
+    z-index: 1;
+    font-size: 11px;
+    line-height: 0;
+    border-radius: 50%;
+    padding-left: 1%;
+    margin-top: 1px;
+    margin-right: 8px;
+}
+
+/* Adiciona a linha conectando as badges */
+.activity-badge::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Inicia no fim da badge */
+    left: 55%;
+    /* Centraliza a linha no meio da badge */
+    width: 2px;
+    /* Largura da linha */
+    height: 30px;
+    /* Altura da linha, ajuste conforme necessário */
+    background-color: #ddd;
+    /* Cor da linha */
+    z-index: -1;
+}
+
+.dashboard .activity .activity-item .activity-content {
+    flex-grow: 1;
+    /* Permite que o conteúdo cresça para ocupar o espaço restante */
+    flex-shrink: 1;
+    flex-basis: auto;
+    /* Tamanho base do conteúdo conforme seu próprio conteúdo */
+}
+
+.activity-item:last-child .activity-badge::after {
+    display: none;
+}
+
+/* Classes de cor para a badge */
+.text-success {
+    color: #06827c !important;
+    /* Verde */
+}
+
+.text-danger {
+    color: #600e7b !important;
+    /* Roxo */
+}
+
+.text-primary {
+    color: #033C8C !important;
+    /* Azul escuro */
+}
+
+.text-info {
+    color: #5AC8FA !important;
+    /* Azul claro */
+}
+
+.text-warning {
+    color: #e6b41f !important;
+    /* Amarelo */
+}
+
+.text-muted {
+    color: #6c757d !important;
+    /* Cinza */
+}

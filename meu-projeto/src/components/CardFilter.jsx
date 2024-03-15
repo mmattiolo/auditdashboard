@@ -1,5 +1,5 @@
-import React from 'react';
 import "./card.css"
+import PropTypes from 'prop-types';
 
 function CardFilter({filterChange}) {
   return (
@@ -25,5 +25,9 @@ function CardFilter({filterChange}) {
     </div>
   );
 }
+
+CardFilter.propTypes = {
+  filterChange: PropTypes.func.isRequired,
+};
 
 export default CardFilter;

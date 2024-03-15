@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './sideBar.css';
 import { navList } from '../data/NavItem';
 import { getStatusClass } from './Functions.jsx';
+import { useActiveComponent } from './Kanban/ActiveComponentContext.jsx'
 
 function SideBar() {
+  const { setActiveComponent } = useActiveComponent();
   // State to track the active menu item
   const [activeItem, setActiveItem] = useState('Dashboard');
 
@@ -45,14 +47,11 @@ function SideBar() {
             className='mm-show mm-collapse'
             data-bs-parent='#sidebar-nav'
           >
-             <li>
-              <a href='#'>
-                <div className="nav-item-content">
-                  
-                  <span>To-do</span>
-                </div>
-              </a>
-            </li>
+        <li className='nav-item'>
+          <a href='#' onClick={() => setActiveComponent('To-do')} className='nav-link'>
+            <span>To-do</span>
+          </a>
+        </li>
 
             <li>
               <a href='#'>

@@ -52,7 +52,7 @@
     margin: 0; /* Removida a inconsistência de margin-bottom para os parágrafos */
 }
 
-.dropdown-menu .notification-item:hover, .header-nav .messages .message-item:hover {
+.dropdown-menu, .header-nav .messages {
     background-color: #f6f9ff;
 }
 

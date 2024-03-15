@@ -11,8 +11,7 @@
 }
 
 .card-stats:hover {
-    transform: scale(1.02);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .card-body {
@@ -34,12 +33,11 @@
     align-items: center;
     justify-content: center;
     margin-right: 15px;
-    background: linear-gradient(45deg,#0d6dfdab,#6710f2b1);
+    background: linear-gradient(45deg,#033C8C,#600e7b);
     color: white;
     
     
 }
-
 
 /* Estilização específica baseada no tipo do cartão */
 .dropdown-item {
@@ -61,11 +59,6 @@
     margin: 15px;
     background-color: #f5f5f5;
     border-radius: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    transition: all 0.1s ease-in-out;
-}
-
-.chart-container:hover {
-    transform: scale(1.02);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    
 }

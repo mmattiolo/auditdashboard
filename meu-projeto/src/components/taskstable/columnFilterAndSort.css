@@ -1,0 +1,71 @@
+/* Estilos específicos para o Dropdown dentro do DataGrid */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown .bi-filter {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #5e6c84; /* Cor que se alinha com o estilo do DataGrid */
+    cursor: pointer;
+  }
+  
+  /* Sobrescrevendo o estilo do dropdown-menu para alinhar com o DataGrid */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Fazendo contraste com o fundo do DataGrid */
+    min-width: 160px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 2px; /* Espaçamento para não colar diretamente no botão */
+    border: 1px solid #e1e4e8; /* Borda sutil alinhada com as linhas do DataGrid */
+    z-index: 100; /* Garantir que fique acima de outros elementos */
+    padding: 0; /* Remover padding padrão para alinhar os itens internamente */
+    opacity: 0;
+   transition: visibility 0.8s, opacity 0.2s linear;
+   visibility: hidden;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Estilo dos itens dentro do dropdown para alinhar com o DataGrid */
+  .dropdown-item-text{
+    color: rgb(69, 71, 84); /* Cor semelhante aos textos no DataGrid */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 10px; /* Espaçamento interno para facilidade de clique */
+    text-decoration: none;
+    display: block;
+
+  }
+  
+  .dropdown-item {
+    color: #454B76; /* Cor semelhante aos textos no DataGrid */
+    font-size: 14px;
+    font-weight: 400;
+    padding: 2px 10px; /* Espaçamento interno para facilidade de clique */
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-item:hover, .dropdown-item:focus {
+    background-color: #f4f5f7; /* Cor de fundo ao passar o mouse, alinhada com o cabeçalho do DataGrid */
+    color: #033C8C; /* Cor de hover para alinhar com a .bg-dark */
+  }
+  
+  /* Divisor para separar seções dentro do dropdown */
+  .dropdown-divider {
+    height: 1px;
+    margin: 0; /* Remover margens externas para alinhamento */
+    overflow: hidden;
+    background-color: #e1e4e8; /* Cor de linha alinhada com as divisórias do DataGrid */
+  }
+  
+  /* Personalizações adicionais podem ser necessárias dependendo do contexto específico e dos elementos adicionais no seu UI/UX design. */
+  
