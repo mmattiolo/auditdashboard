@@ -35,17 +35,16 @@
   }
   
   /* Customizing the button to fit the theme */
-  .btn-primary {
-    background-color: #0052ccac; /* Deep blue, providing good contrast on light backgrounds */
-    color: #ffffff;
+  .btn-outline-secondary {
+    color: #5e6c84;
     border: none;
-    padding: 10px 15px;
-    border-radius: 4px; /* Rounded edges for a modern look */
+    margin: 0.5%;
     transition: background-color 0.2s ease; /* Smooth background color transition on hover */
   }
   
-  .btn-primary:hover {
-    background-color: #003c9e; /* A shade darker for interactive feedback */
+  .addtask{
+    color: #5e6c84;
+    padding-left: 5px;
   }
   
   /* Enhancements for mobile responsiveness */
@@ -111,4 +110,5 @@
     background-color: #e6b41f  !important; /* Azul claro */
   }
   
+
   

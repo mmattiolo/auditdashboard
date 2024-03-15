@@ -23,10 +23,10 @@ function SideBar() {
           <a 
             className={`nav-link collapsed ${activeItem === 'Dashboard' ? 'active' : ''}`} 
             href='#' 
-            onClick={() => handleSetActiveItem('Dashboard')}
+            onClick={() => setActiveComponent('Dashboard')}
           >
             <i className='bi bi-house'></i>
-            <span>Dashboard</span>
+           <span>Dashboard</span>
           </a>
         </li>
 
@@ -42,6 +42,7 @@ function SideBar() {
             <i className='bi bi-calendar4-week'></i>
             <span>Project Management</span>
           </a>
+
           <ul
             id='project-management-nav'
             className='mm-show mm-collapse'
@@ -53,35 +54,25 @@ function SideBar() {
           </a>
         </li>
 
-            <li>
-              <a href='#'>
-                <div className="nav-item-content">
-                  
-                  <span>Sprint</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <div className="nav-item-content">
-                  
-                  <span>Standup</span>
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href='#'>
-                <div className="nav-item-content">
-                  
-                  <span>People</span>
-                </div>
-              </a>
-            </li>
-            {/* Additional project management items */}
-          </ul>
+        <li className='nav-item'>
+          <a href='#' onClick={() => setActiveComponent('Sprint')} className='nav-link'>
+            <span>Sprint</span>
+          </a>
         </li>
 
+        <li className='nav-item'>
+          <a href='#' onClick={() => setActiveComponent('Standup')} className='nav-link'>
+            <span>Standup</span>
+          </a>
+        </li>
+
+        <li className='nav-item'>
+          <a href='#' onClick={() => setActiveComponent('People')} className='nav-link'>
+            <span>People</span>
+          </a>
+        </li>
+        </ul>
+        </li>
         {/* Audit Program */}
  <li className='nav-item'>
           <a

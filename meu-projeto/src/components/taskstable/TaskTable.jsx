@@ -1,15 +1,47 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect,useRef } from 'react';
 import PropTypes from 'prop-types';
 import ColumnFilterAndSort from './ColumnFilterAndSort';
 import './taskTable.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Pagination from '../pagination/Pagination';
-
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 
 
 function TasksTable({ initialTasks }) {
   const [tasks, setTasks] = useState(initialTasks || []);
+  const [showModal, setShowModal] = useState(false);
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
+  
+  
+  // Referências para os campos do formulário
+  const contentRef = useRef();
+  const areaRef = useRef();
+  const deadlineRef = useRef();
+  const responsibleRef = useRef();
+  const statusRef = useRef();
+
+  const handleAddTask = () => {
+    // Obter os valores do formulário
+    const newTask = {
+      id: tasks.length + 1, // Simples geração de ID, considere usar algo mais robusto
+      content: contentRef.current.value,
+      area: areaRef.current.value,
+      deadline: deadlineRef.current.value,
+      responsible: responsibleRef.current.value,
+      status: statusRef.current.value,
+    };
+
+    setTasks(prevTasks => [...prevTasks, newTask]);
+    setSortedTasks(prevTasks => [...prevTasks, newTask]);
+    handleClose();
+
+    // Aqui você faria a chamada para a API para persistir a nova tarefa
+  };
+
   const [sortedTasks, setSortedTasks] = useState(initialTasks || []);
   const [currentPage, setCurrentPage] = useState(1); // Moved up
   const tasksPerPage = 10; // Define your tasks per page
@@ -136,7 +168,31 @@ function TasksTable({ initialTasks }) {
           ))}
         </tbody>
       </table>
-      <button className="btn btn-primary">+</button>
+      <button variant="primary" onClick={handleShow} className="btn btn-outline-secondary">+</button>
+      <span className='addtask'>Add task</span>
+      <Modal show={showModal} onHide={handleClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>Add a new task</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        {/* Formulário para adicionar nova tarefa */}
+        <Form>
+          <Form.Group className="mb-3">
+            <Form.Label>Task Name</Form.Label>
+            <Form.Control type="text" placeholder="Enter task name" ref={contentRef} />
+          </Form.Group>
+          {/* Adicione campos similares para área, deadline, responsável e status */}
+        </Form>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={handleClose}>
+          Close
+        </Button>
+        <Button variant="primary" onClick={handleAddTask}>
+          Save Changes
+        </Button>
+      </Modal.Footer>
+      </Modal>
 
       <Pagination
         itemsPerPage={tasksPerPage}
