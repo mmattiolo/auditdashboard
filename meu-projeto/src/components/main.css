@@ -6,7 +6,7 @@ Main
     margin-top: 60px;
     padding: 18px 20px;
     transition: all 0.3s;
-    background: linear-gradient(90deg,#F5F5F5, #eeededf9);
+    background: linear-gradient(90deg,#f5f5f5ab, #eeededb5);
 }
 
 @media(max-width:1199px){

@@ -1,85 +1,108 @@
-/*----------------------------------
-#Header nav
------------------------------------*/
-
+/* Estilos Gerais */
 .header-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.header-nav .nav-icon {
+  }
+  
+  .header-nav .nav-link {
+    color: whitesmoke; /* Ajuste para melhor contraste */
+    text-decoration: none; /* Remove o sublinhado dos links */
+  }
+  
+  .header-nav .nav-icon {
     font-size: 22px;
     color: whitesmoke;
     margin-right: 25px;
     position: relative;
-}
-
-.header-nav .nav-item .badge-number {
+    cursor: pointer; /* Adiciona o cursor de ponteiro para indicar clicabilidade */
+  }
+  
+  .header-nav .nav-item .badge-number {
     position: absolute;
     top: -2px;
     right: -5px;
-    font-weight: normal;
+    font-weight: bold; /* Aumentado para melhor visibilidade */
     font-size: 12px;
     padding: 3px 6px;
-}
-
-.dropdown-menu .notification-item, .header-nav .messages .message-item {
+    background-color: red; /* Ajuste para melhor destaque */
+    color: white; /* Cor do texto para melhor contraste */
+    border-radius: 50%; /* Torna o badge circular */
+  }
+  
+  .dropdown-menu {
+    background-color: #f6f9ff;
+    border: none; /* Remove a borda padrão */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adiciona sombra para profundidade */
+  }
+  
+  /* Itens de notificação e mensagens */
+  .dropdown-menu .notification-item, 
+  .dropdown-menu .message-item {
     display: flex;
     align-items: center;
     padding: 15px 10px;
-    transition: 0.3s;
-}
-
-.dropdown-menu .notification-item i, .header-nav .messages .message-item img {
+    transition: background-color 0.3s; /* Suaviza a transição de fundo */
+  }
+  
+  .dropdown-menu .notification-item:hover, 
+  .dropdown-menu .message-item:hover {
+    background-color: #eae2e8; /* Feedback visual ao passar o mouse */
+  }
+  
+  /* Ícones e Imagens */
+  .dropdown-menu .notification-item i, 
+  .dropdown-menu .message-item img {
     margin-right: 20px; 
-    font-size: 20px; /* Ajuste apenas para ícones */
-    width: 40px; /* Ajuste apenas para imagens */
-    height: 40px; /* Ajuste apenas para imagens */
-    object-fit: cover; /* Ajuste apenas para imagens */
-}
-
-.dropdown-menu .notification-item h4, .header-nav .messages .message-item h4 {
+    font-size: 24px; /* Tamanho ajustado para ícones */
+    width: 40px;
+    height: 40px;
+    object-fit: cover; /* Garante que as imagens sejam bem recortadas */
+    border-radius: 50%; /* Torna as imagens circulares */
+  }
+  
+  /* Títulos e textos */
+  .dropdown-menu .notification-item h4, 
+  .dropdown-menu .message-item h4,
+  .dropdown-menu .dropdown-header h6 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #444444;
-}
-
-.dropdown-menu .notification-item p, .header-nav .messages .message-item p {
-    font-size: 14px; /* Padronizado para ambos */
+    color: #444444; /* Cor mais escura para melhor leitura */
+  }
+  
+  .dropdown-menu .notification-item p, 
+  .dropdown-menu .message-item p,
+  .dropdown-menu .dropdown-header small {
+    font-size: 14px;
     color: #919191;
-    margin: 0; /* Removida a inconsistência de margin-bottom para os parágrafos */
-}
-
-.dropdown-menu, .header-nav .messages {
-    background-color: #f6f9ff;
-}
-
-.header-nav .messages .message-item a {
-    display: flex;
-    align-items: center;
-    text-decoration: none; 
-    width: 100%; 
-}
-
-.user-avatar {
+    margin: 0;
+  }
+  
+  /* Estilos específicos */
+  .user-avatar, 
+  .dropdown-menu .dropdown-header img {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 40px; /* Ajustado para consistência */
+    height: 40px; /* Ajustado para consistência */
     object-fit: cover;
   }
   
   .dropdown-menu .dropdown-header img {
-    width: 60px;
-    height: 60px;
+    width: 60px; /* Tamanho maior para o cabeçalho */
+    height: 60px; /* Tamanho maior para o cabeçalho */
   }
   
   .dropdown-menu .dropdown-header {
     text-align: center;
+    padding-bottom: 10px; /* Adiciona espaço abaixo do cabeçalho */
   }
   
   .dropdown-menu .dropdown-item i {
     margin-right: 8px;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #e2e6ea; /* Feedback visual ao passar o mouse */
   }
   

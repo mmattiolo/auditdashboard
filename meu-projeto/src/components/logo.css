@@ -23,3 +23,7 @@
     color: whitesmoke;
     font-family: Circular, Arial, sans-serif;
 }
+
+.logo:hover {
+    background-color: #033C8C; /* Feedback visual ao passar o mouse */
+  }

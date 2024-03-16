@@ -1,4 +1,6 @@
 import React from 'react'
+import messageImg1 from '../images/messages-1.jpg'; // Importa a imagem
+import messageImg2 from '../images/messages-2.jpg'; // Importa a imagem
 
 function NavMessage() {
   return (
@@ -24,13 +26,13 @@ function NavMessage() {
         <li className='message-item'>
         <a href='#'>
           <img 
-            src='assets/img/messages-1.jpg'
+            src={messageImg1}
             alt=''
             className='rounded-circle'
             />
           <div>
             <h4>Ademar Pascal</h4>
-            <p>Rebimbica da parafuseta.</p>
+            <p>Lorem ipsum dolor sit.</p>
             <p>3 hrs. ago</p> 
           </div>
           </a>  
@@ -43,13 +45,13 @@ function NavMessage() {
         <li className='message-item'>
         <a href='#'>
           <img 
-            src='assets/img/messages-2.jpg'
+            src={messageImg2}
             alt=''
             className='rounded-circle'
             />
           <div>
             <h4>Eduardo Jose</h4>
-            <p>Motor V8 3x4.</p>
+            <p>Lorem, ipsum dolor.</p>
             <p>2 hrs. ago</p> 
           </div>
           </a>  
