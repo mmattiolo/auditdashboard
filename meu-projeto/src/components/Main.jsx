@@ -16,6 +16,7 @@ function Main() {
     <ErrorBoundary>
       <PageTitle page={activeComponent} />
       {activeComponent === 'Dashboard' && <Dashboard />}
+     
       <KanbanNavbar />
       {activeComponent === 'Board' && <DragDrop />}
       {activeComponent === 'Table' && <TasksTable />}
